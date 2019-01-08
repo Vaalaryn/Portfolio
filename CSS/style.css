@@ -1,0 +1,945 @@
+@font-face {
+    font-family: 'roboto';
+    src: url("../ASSETS/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+body {
+    font-family: Lato, roboto, Arial;
+    background-image: url(../ASSETS/computer.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 1em;
+}
+
+hr {
+    margin: 0.6em;
+    background-color: crimson;
+    border-color: crimson;
+}
+
+a {
+    padding: 3px 0;
+    color: crimson;
+}
+
+.tablink {
+    background-color: #252525;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 20%;
+    box-shadow: 10px 4px 8px -100px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    font-size: 1.2em;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    height: 100%;
+    min-height: 500px;
+    padding: 100px 20%;
+}
+
+
+.container {
+    width: 100%;
+    background-color: #96112c;
+    height: 40px;
+    margin: 10px 0 0 0;
+    color: #96112c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.collapsible {
+    cursor: pointer;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #7b0e24;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    float: right;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.contentcollapse {
+    display: none;
+    overflow: hidden;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+.skills {
+    text-align: right;
+    padding: 10px;
+    background-color: #ffe6eb;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    animation: mymove 1.5s 1;
+}
+
+@keyframes mymove {
+    from {
+        width: 0%;
+    }
+}
+
+.nomSkill1 {
+    position: absolute;
+    color: aliceblue;
+    text-align: right;
+    padding: 10px;
+    height: 40px;
+}
+
+.nomSkill2 {
+    position: absolute;
+    text-overflow: clip;
+}
+
+.titre_partie {
+    text-align: center;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 4px solid #ffe6eb;
+    animation: titre 1s 1;
+}
+
+
+@keyframes titre {
+    0% {
+        width: 15%;
+        margin: 0 auto 1em auto;
+    }
+
+    100% {
+        width: 100%;
+        margin: 0 auto 1em auto;
+    }
+}
+
+
+.tablink:hover {
+    background-color: #777;
+}
+
+#bg {
+    top: 0px;
+    width: 100%;
+}
+
+#fond {
+    background-color: rgba(0, 0, 0, 0.61);
+    padding: 20px;
+    color: white;
+    margin: 50px auto;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#photo_profil {
+    border-radius: 50%;
+}
+
+#IDE,
+#Langues,
+#OS {
+    width: 33.3%;
+    display: inline-block;
+	margin: 0 -2px;
+    margin-top: 40px;
+}
+
+#IDE {
+    padding-right: 2.5%;
+    border-right: 2px solid #ffe6eb;
+}
+
+#Langues {
+    padding-left: 2.5%;
+    border-left: 2px solid #ffe6eb;
+}
+
+#OS {
+    padding: 0 2.5%;
+    border-right: 2px solid #ffe6eb;
+    border-left: 2px solid #ffe6eb;
+}
+
+#html {
+    width: 60%;
+}
+
+#css,
+#c {
+    width: 50%;
+}
+
+#js {
+    width: 30%;
+}
+
+#php {
+    width: 40%;
+}
+
+#mysql {
+    width: 15%;
+}
+
+#git {
+    width: 20%;
+}
+
+#Brackets {
+    width: 65%;
+}
+
+#Geany {
+    width: 50%;
+}
+
+#Windows {
+    width: 70%;
+}
+
+#Linux {
+    width: 35%;
+}
+
+#Anglais {
+    width: 50%;
+}
+
+#Espagnol {
+    width: 20%;
+}
+
+
+.mail {
+    margin: 10px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #6907a8;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.time {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.time::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #be3bf8;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.left {
+    left: 0;
+    animation: moveleft 1.5s 1;
+}
+
+@keyframes moveleft {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+.right {
+    left: 50%;
+    animation: moveright 1.5s 1;
+}
+
+@keyframes moveright {
+    from {
+        left: 150%;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes moveright2 {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+	margin: 1px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.activeButton {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 20%;
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 2;
+    font-size: 1.2em;
+}
+
+.activeRouge {
+    background-color: crimson;
+    border-bottom: 3px solid white;
+}
+
+.activeBleu {
+    background-color: #2838b5;
+    border-bottom: 3px solid white;
+}
+
+.activeOrange {
+    background-color: #ff5800;
+    border-bottom: 3px solid white;
+}
+
+.activeViolet {
+    background-color: #7a14ba;
+    border-bottom: 3px solid white;
+}
+
+.activeVert {
+    background-color: #16e546;
+    border-bottom: 3px solid white;
+}
+
+.activeRougebody {
+    background-color: #c11235;
+}
+
+.activeBleubody {
+    background-color: #26328e;
+}
+
+.activeOrangebody {
+    background-color: #cc4701;
+}
+
+.activeVioletbody {
+    background-color: #5f0f91;
+}
+
+.activeVertbody {
+    background-color: #12bf3a;
+}
+
+.activeRougelien {
+    color: crimson;
+}
+
+.activeRougelien:hover {
+    color: #930d28;
+}
+
+.activeBleulien {
+    color: #2838b5;
+}
+
+.activeBleulien:hover {
+    color: #1d2983;
+}
+
+.activeOrangelien {
+    color: #ff5800;
+}
+
+.activeOrangelien:hover {
+    color: #a73a00;
+}
+
+.activeVioletlien {
+    color: #7a14ba;
+}
+
+.activeVioletlien:hover {
+    color: #520d7d;
+}
+
+.activeVertlien {
+    color: #12bf3a;
+}
+
+.activeVertlien:hover {
+    color: #0a6b20;
+}
+
+.activeRougehr {
+    border-color: crimson;
+    color: crimson;
+}
+
+.activeBleuhr {
+    border-color: #2838b5;
+    color: #2838b5;
+}
+
+.activeOrangehr {
+    border-color: #ff5800;
+    color: #ff5800;
+}
+
+.activeViolethr {
+	border-color: #7a14ba;
+	color: #7a14ba;
+}
+
+.activeVerthr {
+    border-color: #12bf3a;
+    color: #12bf3a;
+}
+
+#Competence {
+    background-color: #c11235;
+}
+
+#Formations {
+    background-color: #5f0f91;
+}
+
+#Projets {
+    background-color: #26328e;
+}
+
+#Autres {
+    background-color: #cc4701;
+}
+
+#Contact {
+    background-color: #12bf3a;
+    min-height: 900px;
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-file-pdf {
+    margin: 0.1em 0.2em;
+    font-size: 45px;
+}
+
+.projet_perso {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 5px;
+    margin: 0.5% 0.5%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    animation: projet 0.8s 1;
+}
+
+@keyframes projet {
+    from {
+        bottom: -1000px;
+    }
+    to {
+        bottom: 0px;
+    }
+}
+
+.descPhoto {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.descPhoto:hover {
+    height: auto;
+    font-size: 1.2em;
+    transition: 0.5s;
+    padding-bottom: 20px;
+}
+
+.projet_perso img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.icone {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0.5em;
+    right: 0;
+    color: black;
+    padding: 0 5px;
+    font-size: 28px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.fa-html5 {
+    color: #e44d26;
+}
+
+.fa-css3-alt {
+    left: 40px;
+    color: #1b73ba;
+}
+
+.fa-js {
+    left: 70px;
+    color: #e9ca32;
+}
+
+.fa-php {
+    left: 70px;
+    color: #858EB8;
+}
+
+
+.fa-php,
+.fa-js,
+.fa-css3-alt,
+.fa-html5 {
+    transition: 0.5s;
+    font-weight: lighter;
+}
+
+.fa-php:hover,
+.fa-js:hover,
+.fa-css3-alt:hover,
+.fa-html5:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+#coord,
+#formContact {
+    background-color: aliceblue;
+    width: 600px;
+    color: green;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0.5em;
+    box-shadow: 1px 20px 20px -10px rgba(0, 0, 0, 0.5);
+    animation: pop 1s 1;
+}
+
+@keyframes pop {
+    from {
+		opacity: 0;
+    }
+}
+
+#coord {
+    margin: 50px auto 50px auto;
+}
+
+#formContact {
+    margin: 70px auto 50px auto;
+    font-size: 1.2em;
+}
+
+#coord .mail {
+    color: green;
+}
+
+#coord .mail:hover {
+    color: #005600;
+}
+
+#coord h2,
+#formContact h2 {
+    padding: 20px;
+    margin-bottom: 10px;
+    margin: 0 30px;
+    border-bottom: 2px solid green;
+    animation: pop 0.5s 1;
+}
+
+.inputform {
+    width: 95%;
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid rgba(18, 191, 58, 0.35);
+    resize: vertical;
+    border-radius: 4px;
+    font-size: 20px;
+	color: rgb(16, 119, 40);
+}
+
+.inputform::placeholder {
+    color: green;
+    opacity: 0.60;
+}
+
+#formContact form textarea {
+    height: 100px;
+	transition: 0s;
+}
+
+#boutonForm {
+    width: 95%;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: aliceblue;
+    background-color: #00aa00;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 0px solid grey;
+    font-size: 20px;
+}
+
+#boutonForm:hover {
+    background-color: #5ee05e;
+}
+
+#Autres h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.p_display {
+    width: 49%;
+    margin: 0% 1% 0 0;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    animation: pop 0.5s 1;
+}
+
+.p_centre {
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    animation: pop 0.5s 1;
+}
+
+#p_timer {
+    margin: 10px auto 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    animation: pop 0.5s 1;
+
+}
+
+#boutonOpenMenu,
+#boutonCloseeMenu {
+    display: none;
+}
+
+#mySidenav {
+    display: none;
+}
+
+#barreNav {
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    #fond img {
+        width: 60%;
+        max-width: 250px;
+    }
+
+    body {
+        background: url(../ASSETS/computer_mobile.png);
+    }
+
+    .container {
+        height: 2.2em;
+        margin-top: 30px;
+    }
+
+    .tablink,
+    .activeButton {
+        height: 20%;
+        width: 100%;
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .activeButton {
+        border-bottom: 2px solid white;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .time {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .time::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .left,
+    .right {
+        animation: moveright2 1.5s 1;
+    }
+
+    .tabcontent {
+        padding: 35px 2%;
+        border-top: 30px solid #252525;
+    }
+
+    #fond {
+        width: 600px;
+        border-radius: 60px;
+        font-size: 0.8em;
+    }
+
+    #OS {
+        margin: 0 -0.200em;
+    }
+
+    #IDE,
+    #OS,
+    #Langues {
+        display: block;
+        width: 100%;
+        border: 0px;
+        margin: 50px 0;
+        padding: 0;
+    }
+
+
+    .projet_perso {
+        width: 100%;
+    }
+
+    .icone {
+        bottom: 0.5em;
+        padding: 0.2em;
+    }
+
+    .descPhoto {
+        padding: 10px 10px;
+    }
+
+    a {}
+
+    #coord,
+    #formContact {
+        background-color: aliceblue;
+        width: 90%;
+        color: green;
+        padding: 0 10px 20px 15px;
+        text-align: center;
+        border-radius: 0.5em;
+    }
+
+    #Autres h3 {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .p_display,
+    #p_timer,
+    .p_centre {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+
+    #fond {
+        width: auto;
+        margin: 10%;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #252525;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #boutonOpenMenu,
+    #boutonCloseMenu {
+        display: block;
+        font-size: 40px;
+        color: white;
+        top: 0;
+        width: 50px;
+        margin: 10px 0 0 10px;
+        padding: 0px;
+        right: 0;
+        position: absolute;
+        z-index: 3;
+    }
+
+    body #boutonOpenMenu {
+        position: fixed;
+    }
+
+    #boutonCloseMenu .fa-times {
+        color: #ffffff;
+        right: 0;
+        text-align: left;
+    }
+
+    .titre_partie {
+        font-size: 2em;
+    }
+
+    #mySidenav {
+        display: block;
+        z-index: 4;
+    }
+
+    #barreNav {
+        display: none;
+    }
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta name="description" content="CV interactif de Brice BITOT Développeur Web Full-Stack en devenir - Rouen - Normandie - HTML, CSS, JavaScript, PHP, MySQL" />
+	<meta name="author" content="Brice BITOT" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="./CSS/style.css">
+	<link rel="shortcut icon" href="./ASSETS/logo.png" type="img/x-icon">
+	
+    <title>Brice BITOT - Portfolio</title>
+    <script defer src="./JS/script.js"></script>
+</head>
+
+<body>
+    <span id="boutonOpenMenu" onclick="openNav()">&#9776;</span>
+		<section id="profil">
+			<div id="fond">
+				<img src="./ASSETS/profil.jpg" alt="photo de profil de Brice BITOT" id="photo_profil" title="Bonjour !">
+				<h1>Brice BITOT</h1>
+				<h2>Développeur Web Full-Stack</h2>
+				<h2>&Eacute;tudiant au <a href="https://www.cesi.fr/" target="_blank" class="lien">CESI</a></h2>
+				<hr>
+				<p class="mail"><a href="mailto:brice.bitot@viacesi.fr" class="lien">brice.bitot@viacesi.fr</a></p>
+				<a href="https://www.linkedin.com/in/bricebitot/" target="_blank" title="Acceder à mon profil linkedin"><i class="fab fa-linkedin lien"></i></a>
+				<a href="./DL/CV-Brice-Bitot.pdf" target="_blank" class="lien" title="Acceder à mon CV"><i class="far fa-file-pdf lien"></i></a>
+				<a href="https://github.com/Vaalaryn" target="_blank" title="Acceder à mon github"><i class="fab fa-github lien"></i></a>
+			</div>
+		</section>
+		<section id="contenu">
+            <div id="mySidenav" class="sidenav">
+                <span id="boutonCloseMenu" onclick="closeNav()"><i class="fas fa-times"></i></span>
+				<button class="tablink" onclick="openPage('Competence', this, 'activeRouge')" name=" tablink">Compétences</button>
+				<button class="tablink" onclick="openPage('Formations', this, 'activeViolet')" name="tablink">Formations</button>
+				<button class="tablink" onclick="openPage('Projets', this, 'activeBleu')" name="tablink">Projets</button>
+				<button class="tablink" onclick="openPage('Autres', this, 'activeOrange')" name="tablink">Autres</button>
+				<button class="tablink" onclick="openPage('Contact', this, 'activeVert')" name="tablink">Contact</button>
+            </div>
+            <nav id="barreNav">
+				<button class="tablink" onclick="openPage('Competence', this, 'activeRouge')" id="defaultOpen" name="tablink">Compétences</button>
+				<button class="tablink" onclick="openPage('Formations', this, 'activeViolet')" name="tablink">Formations</button>
+				<button class="tablink" onclick="openPage('Projets', this, 'activeBleu')" name="tablink">Projets</button>
+				<button class="tablink" onclick="openPage('Autres', this, 'activeOrange')" name="tablink">Autres</button>
+				<button class="tablink" onclick="openPage('Contact', this, 'activeVert')" name="tablink">Contact</button>
+            </nav>
+			<div id="Competence" class="tabcontent">
+				<h1 class="titre_partie">Compétences</h1>
+				<div>
+					<h2 class="titre_competence">Langages</h2>
+					<div class="container collapsible">
+						<p class="nomSkill1">HTML 5</p>
+						<div class="skills" id="html" data-percent="60%">
+							<p class="nomSkill2">HTML 5</p>
+						</div>
+					</div>
+					<div class="contentcollapse">
+						<ul>
+							<li>Création d’une structure HTML</li>
+							<li>Création de formulaires avancés</li>
+							<li>Gestion du contenu HTML, bonnes pratiques et respect de la sémantique</li>
+						</ul>
+					</div>
+					<div class="container collapsible">
+						<p class="nomSkill1">CSS 3</p>
+						<div class="skills" id="css">
+							<p class="nomSkill2">CSS 3</p>
+						</div>
+					</div>
+					<div class="contentcollapse">
+						<ul>
+							<li>Création d'une feuille de style responsive</li>
+							<li>Utilisation des pseudo-éléments et pseudo-classes</li>
+							<li>Utilisation des Media Queries</li>
+							<li>Animations CSS</li>
+							<li>Flexbox</li>
+							<li>Grid</li>
+						</ul>
+					</div>
+					<div class="container collapsible">
+						<p class="nomSkill1">C</p>
+						<div class="skills" id="c">
+							<p class="nomSkill2">C</p>
+						</div>
+					</div>
+					<div class="contentcollapse">
+						<ul>
+							<li>Utilisation de pointeur</li>
+							<li>Utilisation de structure</li>
+							<li>Création de fonction</li>
+							<li>Notion de cURL</li>
+						</ul>
+					</div>
+					<div class="container collapsible">
+						<p class="nomSkill1">PHP</p>
+						<div class="skills" id="php">
+							<p class="nomSkill2">PHP</p>
+						</div>
+					</div>
+					<div class="contentcollapse">
+						<ul>
+							<li>Architecture MVC</li>
+							<li>Traitement de Formulaire</li>
+							<li>POST / GET</li>
+							<li>Utilisation de variables de sessions</li>
+						</ul>
+					</div>
+					<div class="container collapsible">
+						<p class="nomSkill1">JavaScript</p>
+						<div class="skills" id="js">
+							<p class="nomSkill2">JavaScript</p>
+						</div>
+					</div>
+					<div class="contentcollapse">
+						<ul>
+							<li>Sélection d'élément par leurs id, class, tagname ...</li>
+							<li>Ajouter un style ou un attribut à un élément</li>
+							<li>Retirer un style ou un attribut à un élément</li>
+							<li>Détection d'évènement</li>
+						</ul>
+					</div>
+					<div class="container collapsible">
+						<p class="nomSkill1">GIT</p>
+						<div class="skills" id="git">
+							<p class="nomSkill2">GIT</p>
+						</div>
+					</div>
+					<div class="contentcollapse">
+						<ul>
+							<li>utilisation de git en ligne de commande</li>
+							<li>utilisation de git avec des outils comme gitkraken</li>
+						</ul>
+					</div>					
+					<div class="container collapsible">
+						<p class="nomSkill1">MySQL</p>
+						<div class="skills" id="mysql">
+							<p class="nomSkill2">MySQL</p>
+						</div>
+					</div>
+					<div class="contentcollapse">
+						<ul>
+							<li>Base de la gestion de table de données</li>
+							<li>Création de base de données(MCP/MLD/MPD)</li>
+							<li>Lecture et écriture dans une table</li>
+						</ul>
+					</div>
+				</div>
+				<div id="IDE">
+					<h2 class="titre_competence">Outils</h2>
+					<div class="container">
+						<p class="nomSkill1">Brackets</p>
+						<div class="skills" id="Brackets">
+							<p class="nomSkill2">Brackets</p>
+						</div>
+					</div>
+					<div class="container">
+						<p class="nomSkill1">Geany</p>
+						<div class="skills" id="Geany">
+							<p class="nomSkill2">Geany</p>
+						</div>
+					</div>
+				</div><div id="OS">
+					<h2 class="titre_competence">OS</h2>
+					<div class="container">
+						<p class="nomSkill1">Windows</p>
+						<div class="skills" id="Windows">
+							<p class="nomSkill2">Windows</p>
+						</div>
+					</div>
+					<div class="container">
+						<p class="nomSkill1">Linux</p>
+						<div class="skills" id="Linux">
+							<p class="nomSkill2">Linux</p>
+						</div>
+					</div>
+				</div><div id="Langues">
+					<h2 class="titre_competence">Langues</h2>
+					<div class="container">
+						<p class="nomSkill1">Anglais</p>
+						<div class="skills" id="Anglais">
+							<p class="nomSkill2">Anglais</p>
+						</div>
+					</div>
+					<div class="container">
+						<p class="nomSkill1">Espagnol</p>
+						<div class="skills" id="Espagnol">
+							<p class="nomSkill2">Espagnol</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Formations" class="tabcontent">
+				<h1 class="titre_partie">Formations</h1>
+				<div class="timeline">
+					<div class="time left">
+						<div class="content">
+							<h2>Sept 2018</h2>
+							<p>CESI ALTERNANCE Mont-Saint-Aignan</p>
+							<p>Actuellement en formation étudiant au CESI</p>
+						</div>
+					</div>
+					<div class="time right">
+						<div class="content">
+							<h2>Sept 2015 à Fév 2018</h2>
+							<p>UFR Science et technique Technopole</p>
+							<p>j'ai appris pendant c'est 3 années de fac des langages comme HTML / CSS / PHP / JS / C</p>
+						</div>
+					</div>
+					<div class="timeline">
+						<div class="time left">
+							<div class="content">
+								<h2>2015</h2>
+								<p>Lycée Camille Saint Saens </p>
+								<p>BAC S</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Projets" class="tabcontent">
+				<h1 class="titre_partie">Projets</h1>
+				<div class="projet_perso">
+					<img src="./ASSETS/projetJDR.jpg" alt="photo projet JDR" />
+					<p class="descPhoto">Site de gestion JDR(Jeux de role)(en cours)</p>
+					<div class="icone">
+						<i class="fab fa-html5" title="HTML 5"></i>
+						<i class="fab fa-css3-alt" title="CSS 3"></i>
+						<i class="fab fa-js" title="JAVASCRIPT"></i>
+						<i class="fab fa-php" title="PHP"></i>
+					</div>
+				</div><div class="projet_perso">
+					<img src="./ASSETS/projetPortfolio.png" alt="photo projet Portfolio" />
+					<p class="descPhoto">Portfolio</p>
+					<div class="icone">
+						<i class="fab fa-html5" title="HTML 5"></i>
+						<i class="fab fa-css3-alt" title="CSS 3"></i>
+						<i class="fab fa-js" title="JAVASCRIPT"></i>
+						<i class="fab fa-php" title="PHP"></i>
+					</div>
+				</div><div class="projet_perso">
+					<img src="./ASSETS/projetVente.png" alt="photo projet site de vente en ligne" />
+					<p class="descPhoto">Site web de vente en ligne pour la fac</p>
+					<div class="icone">
+						<i class="fab fa-html5" title="HTML 5"></i>
+						<i class="fab fa-css3-alt" title="CSS 3"></i>
+						<i class="fab fa-php" title="PHP"></i>
+					</div>
+				</div>
+			</div>
+			<div id="Autres" class="tabcontent">
+				<h1 class="titre_partie">Autres Info</h1>
+				<h3>Bonjour je m'appelle Brice BITOT, j'ai 21 ans</h3>
+				<p class="p_display">Après avoir obtenu mon Baccalauréat j'ai trouvé un intérêt important pour l'informatique lors de ma première année de licence. Je suis actuellement étudiant en première année au sein du CESI où j'apprends à maîtriser les langages de programmation dans le but de devenir un développeur WEB.</p><p class="p_display">Passionné par l'informatique, en quête de nouvelles connaissances, je suis interessé par les nouvelles technologies, je suis polyvalent, motivé et détérminé dans mes projets, je pratique du sport comme l'escalade et le <span title="et pourtant je ne suis pas Brice de Nice">surf</span> et j'ai le Permis B j'ai aussi une passion pour le cinéma en général.</p>
+				<p class="p_centre">Jeune et autodidacte, pratiquant le développement web lors de mes temps libres, je développe notamment mes compétences grâces à des sites comme OpenClassroom / w3school.</p>
+				<p class="p_centre">Je suis actuellement à la recherche d'une entreprise pour une alternance ou un stage.</p>
+				<p id="p_timer">Il me reste actuellement <span id="timer"></span> avant la fin de ma formation au CESI</p>
+			</div>
+			<div id="Contact" class="tabcontent">
+				<h1 class="titre_partie">Contact</h1>
+				<div id="formContact">
+					<h2> Formulaire de Contact</h2>
+					<form action="../PHP/formulaire_contact.php" method="post">
+						<input type="text" class="inputform" placeholder="Votre nom / prenom" required="required" name="nom">
+						<input type="email" class="inputform" placeholder="votre adresse mail" required="required" name="mail">
+						<input type="text" class="inputform" placeholder="Le sujet de votre message" required="required" name="sujet">
+						<textarea class="inputform" placeholder="Votre message" required="required" name="msg"></textarea>
+						<input type="submit" id="boutonForm" value="Envoyer">
+					</form>
+				</div>
+				<div id="coord">
+					<h2>Mes coordonnées</h2>
+					<p class="mail"><a href="mailto:brice.bitot@viacesi.fr" class="mail">brice.bitot@viacesi.fr</a></p>
+					<p>+33 6 59 54 53 62</p>
+				</div>
+			</div>
+		</section>
+</body>
+</html>
