@@ -5,7 +5,7 @@ services:
     container_name: ${PROJECT_NAME}
     image: nginx
     volumes:
-      - ./templates:/etc/nginx/templates
+      - ./:/var/www/
     ports:
       -   "${PORT}:80"
     environment:
