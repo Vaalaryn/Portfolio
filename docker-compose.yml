@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  projet:
+    container_name: ${PROJECT_NAME}
+    image: nginx
+    volumes:
+      - ./templates:/etc/nginx/templates
+    ports:
+      -   "${PORT}:80"
+    environment:
+      - NGINX_PORT=80
